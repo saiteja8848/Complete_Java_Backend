@@ -17,9 +17,7 @@
 <Summary>Generics</Summary>
 </details>
 
-<details>
-<Summary>Annotations && Reflection</Summary>
-</details>
+
 
 <details>
 <Summary>Object class methods(hashCode and equals contract)</Summary>
@@ -34,12 +32,21 @@
 </details>
 
 <details>
+<Summary>Wrapper classes, String,StringBuffer and StringBuilder</Summary>
+</details>
+
+<details>
 <Summary>Collections framework && Comparable, comparator Interfaces</Summary>
 </details>
 
 
 <details>
 <Summary>Multithreading</Summary>
+</details>
+
+
+<details>
+<Summary>Annotations && Reflection</Summary>
 </details>
 
 <details>
