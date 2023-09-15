@@ -22,7 +22,19 @@
 </details>
 
 <details>
-<Summary>Collections framework</Summary>
+<Summary>Object class methods(hashCode and equals contract)</Summary>
+</details>
+
+<details>
+<Summary>Cloning - deep && shallow cloning</Summary>
+</details>
+
+<details>
+<Summary>Serialization && Deserialization</Summary>
+</details>
+
+<details>
+<Summary>Collections framework && Comparable, comparator Interfaces</Summary>
 </details>
 
 
