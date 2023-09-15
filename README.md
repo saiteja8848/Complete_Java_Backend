@@ -65,10 +65,11 @@ public class Main {
 }
 ```
 
+<br>
 <h6>Method references</h6>
 
 
-
+<br>
 <h6>Predefined Functional Interfaces</h6>
 
 
