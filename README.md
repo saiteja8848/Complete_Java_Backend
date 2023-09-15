@@ -4,6 +4,28 @@
 
 
 <details>
+<Summary>Object oriented Programming Concepts</Summary>
+</details>
+
+
+<details>
+<Summary>Exception Handling</Summary>
+</details>
+
+
+<details>
+<Summary>Generics</Summary>
+</details>
+
+<details>
+<Summary>Annotatios && Reflection</Summary>
+</details>
+
+<details>
+<Summary>Collections framework</Summary>
+</details>
+
+<details>
 <Summary>Java 8 Features</Summary>
 <h6>1. Lambda Expressions && Functional Interfaces</h6>
 
