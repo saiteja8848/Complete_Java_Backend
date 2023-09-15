@@ -5,7 +5,7 @@
 
 <details>
 <Summary>Java 8 Features</Summary>
-<h6>Lambda Expressions && Functional Interfaces</h6>
+<h6>1. Lambda Expressions && Functional Interfaces</h6>
 
 
 Syntax for lambda expressions
@@ -66,11 +66,11 @@ public class Main {
 ```
 
 <br>
-<h6>Method references</h6>
+<h6> 2.Method references</h6>
 
 
 <br>
-<h6>Predefined Functional Interfaces</h6>
+<h6> 3.Predefined Functional Interfaces and there examples</h6>
 
 
 </details>
