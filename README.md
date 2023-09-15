@@ -1,21 +1,21 @@
 # Complete_Java_Backend
 
 
-<details>
-<Summary>JDK, JRE && JVM && Java features</Summary>
-</details>
 
 
 <details>
-<Summary>Object oriented programming features</Summary>
-
-<h2>Class && Object</h2>
-
+<Summary>Java 8 Features</Summary>
+<h2>Functional Interfaces</h2>
+  
 ```
 function test() {
   console.log("notice the blank line before this function?");
 }
 ```
+
+<h2>Predefined Functional Interfaces</h2>
+
+
 </details>
 
 
