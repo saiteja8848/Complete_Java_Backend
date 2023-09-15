@@ -20,9 +20,7 @@ class Bluepen implements Pen{
 }
 
 public class Main {
-   
-   public static void main(String[] args) {
-      
+   public static void main(String[] args) { 
       //Without Lambda expressions
       Bluepen bluePen = new Bluepen();
       takeNotes(bluePen);
@@ -31,13 +29,16 @@ public class Main {
       Pen pen = ()->System.out.println("Writing with blue pen....");
       takeNotes(pen);
    }
-  
+
    public static void takeNotes(Pen pen){
       pen.write();
    }
 }
-
 ```
+
+<h2>Method references</h2>
+
+
 
 <h2>Predefined Functional Interfaces</h2>
 
