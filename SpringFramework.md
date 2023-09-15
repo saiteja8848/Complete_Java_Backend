@@ -7,11 +7,11 @@
 
 
 <details>
-<Summary>Spring Annotations</Summary>
+<Summary>SpringAnnotations</Summary>
 </details>
 
 
 <details>
-<Summary>Spring core - container </Summary>
+<Summary>Spring core - Containers,Bean&BeanScopes, InversionOfControl,DependencyInjection </Summary>
 </details>
 
