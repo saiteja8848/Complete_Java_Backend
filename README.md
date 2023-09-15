@@ -5,7 +5,7 @@
 
 <details>
 <Summary>Java 8 Features</Summary>
-<h2>Functional Interfaces</h2>
+<h2>Lambda Expressions && Functional Interfaces</h2>
   
 ```
 function test() {
