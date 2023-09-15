@@ -8,8 +8,27 @@
 <h2>Lambda Expressions && Functional Interfaces</h2>
   
 ```
-function test() {
-  console.log("notice the blank line before this function?");
+interface Pen{
+     void write();
+}
+
+class Bluepen implements Pen{
+    public void write(){
+        System.out.println("Writing with blue pen....");
+    }
+}
+
+
+public class Main {
+   
+   public static void main(String[] args) {
+      Bluepen bluePen = new Bluepen();
+      takeNotes(bluePen);
+   }
+  
+   public static void takeNotes(Pen pen){
+      pen.write();
+   }
 }
 ```
 
