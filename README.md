@@ -18,7 +18,7 @@
 </details>
 
 <details>
-<Summary>Annotatios && Reflection</Summary>
+<Summary>Annotations && Reflection</Summary>
 </details>
 
 <details>
