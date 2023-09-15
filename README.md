@@ -5,7 +5,7 @@
 
 <details>
 <Summary>Java 8 Features</Summary>
-<h2>Lambda Expressions && Functional Interfaces</h2>
+<h5>Lambda Expressions && Functional Interfaces</h5>
   
 ```
 @FunctionalInerface
@@ -36,11 +36,11 @@ public class Main {
 }
 ```
 
-<h2>Method references</h2>
+<h5>Method references</h5>
 
 
 
-<h2>Predefined Functional Interfaces</h2>
+<h5>Predefined Functional Interfaces</h5>
 
 
 </details>
