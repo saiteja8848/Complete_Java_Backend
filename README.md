@@ -25,6 +25,11 @@
 <Summary>Collections framework</Summary>
 </details>
 
+
+<details>
+<Summary>Multithreading</Summary>
+</details>
+
 <details>
 <Summary>Java 8 Features</Summary>
 <h6>1. Lambda Expressions && Functional Interfaces</h6>
