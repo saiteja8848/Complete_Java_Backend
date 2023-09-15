@@ -73,12 +73,22 @@ public class Main {
 <h6> 3.Predefined Functional Interfaces and there examples</h6>
 
 
+
 <br>
-<h6> 4.Stream Intro, classes and interfaces</h6>
+<h6> 4.Optionals </h6>
 
 
 <br>
-<h6> 3.Relation ship between stream and functional interfaces</h6>
+<h6> 5.Stream Intro, classes and interfaces</h6>
+
+
+<br>
+<h6> 6.Relation ship between stream and functional interfaces</h6>
+
+
+<br>
+<h6> 7.Date and Time API</h6>
+
 
 </details>
 
