@@ -161,7 +161,10 @@ Supplier<String> stringSupplierRef = String::new;
 
 <br>
 <h6> 3.Predefined Functional Interfaces and there examples</h6>
+     - Java provides predefined functional interfaces which are avaliable in java.util.function package
 
+![alt text](https://www.falkhausen.de/Java-8/java.util/function.png)
+     
 
 
 <br>
