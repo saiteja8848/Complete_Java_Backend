@@ -164,6 +164,53 @@ Supplier<String> stringSupplierRef = String::new;
      - Java provides predefined functional interfaces which are avaliable in java.util.function package
 
 ![alt text](https://www.falkhausen.de/Java-8/java.util/function.png)
+
+
+```
+import java.util.function.Supplier;
+
+public class FunctionInterfaces {
+    public static void main(String[] args) {
+
+
+      //  1.Supplier  : Represents a supplier of results without taking any input.
+        Supplier<String> supplier = () -> "Hello, World!";
+        String result = supplier.get();
+        System.out.println(result); // Output: Hello, World!
+
+
+        //2. Consumer : Represents an operation that takes an input argument and returns no result.
+        Consumer<String> consumer = message -> System.out.println("Message: " + message);
+        consumer.accept("Hello, Consumer!");
+
+        //3.Predicate : Represents a boolean-valued function of one argument.
+        Predicate<Integer> isEven = number -> number % 2 == 0;
+        boolean result = isEven.test(4);
+        System.out.println("Is 4 even? " + result); // Output: Is 4 even? true
+
+
+        //4.Function : Represents a function that takes an argument of type T and produces a result of type R
+        Function<Integer, String> intToString = number -> "Number: " + number;
+        String result = intToString.apply(42);
+        System.out.println(result); // Output: Number: 42
+
+
+        // 5..UnaryOperator<T> : Represents an operation on a single operand of type T that produces a result of the same type T.
+        UnaryOperator<Integer> square = number -> number * number;
+        int result = square.apply(5);
+        System.out.println("Square of 5: " + result); // Output: Square of 5: 25
+
+        //6. BinaryOperator<T>: Represents an operation upon two operands of type T that produces a result of the same type T. 
+        BinaryOperator<Integer> add = (a, b) -> a + b;
+        int result = add.apply(3, 7);
+        System.out.println("3 + 7 = " + result); // Output: 3 + 7 = 10
+
+    }
+}
+
+
+```
+
      
 
 
