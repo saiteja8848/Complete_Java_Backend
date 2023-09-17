@@ -274,8 +274,8 @@ Optional<Integer> filteredOptional = optional.filter(num -> num > 50); // Return
 
 
 <p align="center">
-  <img src="./Java_Images/StreamsHierarchy.jpeg" width="350" title="hover text">
-  <img src="./Java_Images/StreamsHierarchy (2).jpeg" width="350" alt="accessibility text">
+  <img src="https://github.com/saiteja8848/Complete_Java_Backend/blob/main/Java_Images/StreamsHierarchy.jpeg" width="350" title="hover text">
+  <img src="https://github.com/saiteja8848/Complete_Java_Backend/blob/main/Java_Images/StreamsHierarchy (2).jpeg" width="350" alt="accessibility text">
 </p>
 
 <br>
