@@ -163,7 +163,7 @@ Supplier<String> stringSupplierRef = String::new;
 <h6> 3.Predefined Functional Interfaces and there examples</h6>
      - Java provides predefined functional interfaces which are avaliable in java.util.function package
 
-![alt text](./Java_Images/FI.png)
+![alt text](https://www.falkhausen.de/Java-8/java.util/function.png)
 
 
 ```
@@ -273,7 +273,7 @@ Optional<Integer> filteredOptional = optional.filter(num -> num > 50); // Return
 <h6> 5.Stream Intro, classes and interfaces</h6>
 
 
-![Alt Text]([./Java_Images/StreamsHierarchy.jpeg](https://www.logicbig.com/tutorials/core-java-tutorial/java-util-stream/stream-api-intro/images/stream-api.png))
+![Alt Text](https://www.logicbig.com/tutorials/core-java-tutorial/java-util-stream/stream-api-intro/images/stream-api.png)
 
 Please check the collection class methods and Stream support class methods
 
@@ -281,10 +281,10 @@ Please check the collection class methods and Stream support class methods
 
 
 
-![Alt Text]([./Java_Images/stream-support.jpeg](https://www.falkhausen.de/Java-8/java.util/stream/StreamSupport.png))
+![Alt Text](https://www.falkhausen.de/Java-8/java.util/stream/StreamSupport.png)
 
 
-![Alt Text]([Java_Images/Stream-FI.jpeg](https://www.falkhausen.de/Java-8/java.util/stream/Stream.png))
+![Alt Text](https://www.falkhausen.de/Java-8/java.util/stream/Stream.png)
 
 <br>
 <h6> 6.Relation ship between stream and functional interfaces</h6>
