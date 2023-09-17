@@ -273,6 +273,11 @@ Optional<Integer> filteredOptional = optional.filter(num -> num > 50); // Return
 <h6> 5.Stream Intro, classes and interfaces</h6>
 
 
+<p align="center">
+  <img src="./Java_Images/StreamsHierarchy.jpeg" width="350" title="hover text">
+  <img src="./Java_Images/StreamsHierarchy (2).jpeg" width="350" alt="accessibility text">
+</p>
+
 <br>
 <h6> 6.Relation ship between stream and functional interfaces</h6>
 
