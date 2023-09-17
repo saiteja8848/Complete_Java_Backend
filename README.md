@@ -273,20 +273,18 @@ Optional<Integer> filteredOptional = optional.filter(num -> num > 50); // Return
 <h6> 5.Stream Intro, classes and interfaces</h6>
 
 
-![Alt Text](./Java_Images/StreamsHierarchy.jpeg)
-
-![Alt Text](./Java_Images/StreamsHierarchy%20(2).jpeg)
+![Alt Text]([./Java_Images/StreamsHierarchy.jpeg](https://www.logicbig.com/tutorials/core-java-tutorial/java-util-stream/stream-api-intro/images/stream-api.png))
 
 Please check the collection class methods and Stream support class methods
 
-![Alt Text](./Java_Images/Collection-CLASS.jpeg)
+![Alt Text](https://www.falkhausen.de/Java-8/java.util/stream/Collectors.png)
 
 
 
-![Alt Text](./Java_Images/stream-support.jpeg)
+![Alt Text]([./Java_Images/stream-support.jpeg](https://www.falkhausen.de/Java-8/java.util/stream/StreamSupport.png))
 
 
-![Alt Text](Java_Images/Stream-FI.jpeg)
+![Alt Text]([Java_Images/Stream-FI.jpeg](https://www.falkhausen.de/Java-8/java.util/stream/Stream.png))
 
 <br>
 <h6> 6.Relation ship between stream and functional interfaces</h6>
