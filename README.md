@@ -292,14 +292,15 @@ Please check the collection class methods and Stream support class methods
 
 
 ```
-Example 1: ** Flitering List of products whose price is greater than 3k, so we use fliter, map and collect**
+Example 1: **fliter, map and collect**
+
   fliter : Stream<T> filter(Predicate<? super T> predicate) - Predicate : checks for true or false and adds to stream
   map : <R> Stream<R> map(Function<? super T, ? extends R> mapper) - Function :  that takes an argument of type T and produces a result of type R
-  collect : <R, A> R collect(Collector<? super T, A, R> collector) - Collector is a class and it has many static methods - one such method is toList
-  Collector : public static <T> Collector<T, ?, List<T>> toList()
+  collect : <R, A> R collect(Collector<? super T, A, R> collector) -  collecting elements from a stream into a specific type of collection.
+  Collector : public static <T> Collector<T, ?, List<T>> toList() -  Collector is a class and it has many static methods - one such method is toList
 
   Conclusion :
-    - .map and .filter are abstract methods defined by the Stream interface in Java, they accept predefined functional interface as arguments or parameters in java
+    - .map , .filter and .collect are abstract methods defined by the Stream interface in Java, they accept predefined functional interface as arguments or parameters in java
     - So The actual implementation of these methods depends on the specific stream type.
 
    List<Float> productPriceList2 =productsList.stream()  
@@ -309,8 +310,50 @@ Example 1: ** Flitering List of products whose price is greater than 3k, so we u
 
 
 
- Example 2 : 
+ Example 2 : Reduce example
 
+ reduce :
+  - Many times, we need to perform operations where a stream reduces to single resultant value, Reducing is the repeated process of combining all elements.
+  - reduce operation applies a binary operator to each element in the stream where the first argument to the operator is the return value of the previous application and second argument is the         current stream element. (Identity, accumlator and combiner)
+  - T reduce(T identity, BinaryOperator<T> accumulator) - identity is initial value of type T and accumulator is a function for combining two values 
+  -  Optional<T> reduce(BinaryOperator<T> accumulator) - overloaded one
+
+      case 1 : summing all the elements
+        List<Integer> array = Arrays.asList(-2, 0, 4, 6, 8);
+        // Finding sum of all elements
+        int sum = array.stream().reduce(0, (element1, element2) -> element1 + element2); // 16
+
+        int product = IntStream.range(2, 8)
+                     .reduce((num1, num2) -> num1 * num2)
+                     .orElse(-1);
+
+
+      case 2 : comparing against all strings to find the max length string
+
+        List<String> words = Arrays.asList("GFG", "Geeks", "for",  "GeeksQuiz", "GeeksforGeeks");
+  
+        // The lambda expression passed to
+        // reduce() method takes two Strings
+        // and returns the longer String.
+        // The result of the reduce() method is
+        // an Optional because the list on which
+        // reduce() is called may be empty.
+        Optional<String> longestString = words.stream().reduce((word1, word2)-> word1.length() > word2.length() ? word1 : word2);
+        longestString.ifPresent(System.out::println); //GeeksforGeeks
+
+     case 3: combing different strings into one single string
+
+        String[] array = { "Geeks", "for", "Geeks" };
+  
+        // The result of the reduce() method is
+        // an Optional because the list on which
+        // reduce() is called may be empty.
+        Optional<String> String_combine = Arrays.stream(array)
+                                           .reduce((str1, str2)
+                                           -> str1 + "-" + str2);
+        if (String_combine.isPresent()) {
+            System.out.println(String_combine.get()); // Geeks-for-Geeks
+        }
 
 ```
 
