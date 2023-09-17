@@ -290,6 +290,30 @@ Please check the collection class methods and Stream support class methods
 <h6> 6.Relation ship between stream and functional interfaces</h6>
 
 
+
+```
+Example 1: ** Flitering List of products whose price is greater than 3k, so we use fliter, map and collect**
+  fliter : Stream<T> filter(Predicate<? super T> predicate) - Predicate : checks for true or false and adds to stream
+  map : <R> Stream<R> map(Function<? super T, ? extends R> mapper) - Function :  that takes an argument of type T and produces a result of type R
+  collect : <R, A> R collect(Collector<? super T, A, R> collector) - Collector is a class and it has many static methods - one such method is toList
+  Collector : public static <T> Collector<T, ?, List<T>> toList()
+
+  Conclusion :
+    - .map and .filter are abstract methods defined by the Stream interface in Java, they accept predefined functional interface as arguments or parameters in java
+    - So The actual implementation of these methods depends on the specific stream type.
+
+   List<Float> productPriceList2 =productsList.stream()  
+                                     .filter(p -> p.price > 30000)// filtering data  
+                                     .map(p->p.price)        // fetching price  
+                                     .collect(Collectors.toList()); // collecting as list  
+
+
+
+ Example 2 : 
+
+
+```
+
 <br>
 <h6> 7.Date and Time API</h6>
 
