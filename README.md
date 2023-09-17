@@ -163,7 +163,7 @@ Supplier<String> stringSupplierRef = String::new;
 <h6> 3.Predefined Functional Interfaces and there examples</h6>
      - Java provides predefined functional interfaces which are avaliable in java.util.function package
 
-![alt text](https://www.falkhausen.de/Java-8/java.util/function.png)
+![alt text](./Java_Images/FI.png)
 
 
 ```
@@ -273,10 +273,20 @@ Optional<Integer> filteredOptional = optional.filter(num -> num > 50); // Return
 <h6> 5.Stream Intro, classes and interfaces</h6>
 
 
-<p align="center">
-  <img src="https://github.com/saiteja8848/Complete_Java_Backend/blob/main/Java_Images/StreamsHierarchy.jpeg" width="350" title="hover text">
-  <img src="https://github.com/saiteja8848/Complete_Java_Backend/blob/main/Java_Images/StreamsHierarchy (2).jpeg" width="350" alt="accessibility text">
-</p>
+![Alt Text](./Java_Images/StreamsHierarchy.jpeg)
+
+![Alt Text](./Java_Images/StreamsHierarchy%20(2).jpeg)
+
+Please check the collection class methods and Stream support class methods
+
+![Alt Text](./Java_Images/Collection-CLASS.jpeg)
+
+
+
+![Alt Text](./Java_Images/stream-support.jpeg)
+
+
+![Alt Text](./Java_Images/Stream-FI.jpeg)
 
 <br>
 <h6> 6.Relation ship between stream and functional interfaces</h6>
