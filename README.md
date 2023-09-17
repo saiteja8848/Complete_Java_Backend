@@ -286,7 +286,7 @@ Please check the collection class methods and Stream support class methods
 ![Alt Text](./Java_Images/stream-support.jpeg)
 
 
-![Alt Text](./Java_Images/Stream-FI.jpeg)
+![Alt Text](Java_Images/Stream-FI.jpeg)
 
 <br>
 <h6> 6.Relation ship between stream and functional interfaces</h6>
