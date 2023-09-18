@@ -6,61 +6,55 @@
 <details>
 <Summary>Object oriented Programming Concepts</Summary>
 
-<h6><strong>Class(Static) & Object(Non-static or Instance)</strong></h6>
+##### Class(Static) & Object(Non-static or Instance)
 
 
 
 ``` 
         
-        Class
-            - A class in Java is a blueprint or template for creating objects.
-            - It defines the structure and behavior that objects created from the class will have. 
-            - It consists of instance variables(fields/properties), methods(actions/behavior) and construtors(initilization), nested classes.
-            - It is a logical entity.
-            - To access class level methods or fields- we have to define them as static fields or static methods.
-            - By default every class is child class of Object class in java - we can use object class methods on every class - inheritance.
+ Class
+ - A class in Java is a blueprint or template for creating objects.
+ - It defines the structure and behavior that objects created from the class will have. 
+ - It consists of instance variables(fields/properties), methods(actions/behavior) and construtors(initilization), nested classes.
+ - It is a logical entity.
+ - To access class level methods or fields- we have to define them as static fields or static methods.
+ - By default every class is child class of Object class in java - we can use object class methods on every class - inheritance.
 
-        Object
-           - It is a physical entity, it takes up the memory space
-           - we use new keyword to create an instance of the class called object.
-           - when we call new keyword on a class for creating object, it first invokes constructor - which is used to initializing fields.
+ Object
+- It is a physical entity, it takes up the memory space
+- we use new keyword to create an instance of the class called object.
+- when we call new keyword on a class for creating object, it first invokes constructor - which is used to initializing fields.
 
-      Example :
+ Example :
 
-               // Define a class named "Person"
-                class Person {
-                    // Fields (attributes)
-                    String name;
-                    int age;
+// Define a class named "Person"
+ class Person {
+  // Fields (attributes)
+    String name;
+    int age;
                 
-                    // Constructor
-                    public Person(String name, int age) {
-                        this.name = name;
-                        this.age = age;
-                    }
+  // Constructor
+ public Person(String name, int age) {
+     this.name = name;
+     this.age = age;
+ }
         
-                    // Method to display information about the person
-                    public void displayInfo() {
-                        System.out.println("Name: " + name);
-                        System.out.println("Age: " + age);
-                    }
-        }
+ // Method to display information about the person
+  public void displayInfo() {
+    System.out.println("Name: " + name);
+    System.out.println("Age: " + age);
+ }
 
-            public class Main {
-                public static void main(String[] args) {
-                    // Create an object of the "Person" class
-                    Person person1 = new Person("Alice", 30);
-            
-                    // Call the "displayInfo" method on the object
-                    person1.displayInfo();
-            
-                    // Create another object of the "Person" class
-                    Person person2 = new Person("Bob", 25);
-            
-                    // Call the "displayInfo" method on the second object
-                    person2.displayInfo();
-                }
-            }
+}
+
+public class Main {
+   public static void main(String[] args) {
+        Person person1 = new Person("Alice", 30);
+        person1.displayInfo();
+        Person person2 = new Person("Bob", 25);
+        person2.displayInfo();
+   }
+}
 
 
 Static and Non-static:
@@ -191,7 +185,8 @@ then the default value will be initialized by the default constructor depending 
 
 ```
     
-<h6>Encapuslation(Access specifiers,packages, using getters/setters)</h6>
+#####  Encapuslation(Access specifiers,packages, using getters/setters)
+ 
 
 
 Packages : A package is a way to organize related classes and interfaces into a group or namespace.
@@ -279,7 +274,7 @@ public class Person {
 
 ```
 
-<h6>Abstraction(Interface, Abstract class, Interfaces vs abstract class)</h6>
+##### Abstraction(Interface, Abstract class, Interfaces vs abstract class)
 
 
 
@@ -459,18 +454,24 @@ public class Main {
 
 
 
-<h6>Polymorphism(Method overloading(Static/compile time binding)&method overriding(Runtime/Dynamic binding- reference type))</h6>
+##### Polymorphism(Method overloading(Static/compile time binding)&method overriding(Runtime/Dynamic binding- reference type))
 
-A)Method overloading
-B)Method Overriding
+A)Method overloading : https://www.geeksforgeeks.org/method-overloading-in-java/
+B)Method Overriding : https://www.geeksforgeeks.org/overriding-in-java/
+Difference between method overloading and method overriding 
+	https://www.geeksforgeeks.org/difference-between-method-overloading-and-method-overriding-in-java/
 
 
+##### Inheritance(types of inheritance, diamond problem, Reusabality)
 
-<h6>Inheritance(types of inheritance, diamond problem, Reusabality)</h6>
+https://www.geeksforgeeks.org/inheritance-in-java/
 
 ![Alt Text](https://i0.wp.com/www.tutorialspoint.com/java/images/types_of_inheritance.jpg?zoom=2)
 
-https://javagoal.com/multiple-inheritances-in-java/
+why multiple inheritance is not possible in java and java 8 solution ?
+	https://javagoal.com/multiple-inheritances-in-java/
+
+
 
 </details>
 
