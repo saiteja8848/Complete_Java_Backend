@@ -58,6 +58,131 @@
                     person2.displayInfo();
                 }
             }
+
+
+Static and Non-static:
+======================
+Fields:
+=======
+Static Fields:
+    i. A static field is shared among all instances of a class (memory allocated only once and shared accross the objects).
+    ii.Changes to a static field affect all instances and are persistent across objects.
+Non-Static Fields:
+   i.A non-static field is unique to each instance of a class.
+   ii.Changes to a non-static field only affect the specific instance they are associated with
+
+Syntax:
+ClassName.staticField
+ClassName.staticMethod()
+
+Methods:
+========
+	Static Methods:
+        i. A static method can be called on the class itself, without creating an instance.
+        ii. Static methods cannot access non-static (instance) members directly, as they don't have access to an object's state.
+Non-Static Methods:
+        i. Non-static methods are associated with instances and can access both static and non-static members of the class.
+        ii.They have access to the instance's state through the this keyword.
+
+Syntax:
+object.nonStaticField
+object.nonStaticMethod()
+
+Note 1 : Atleast one class in java file should always be public, if we don't explicitly define the class as public,
+         else JVM by default takes fileName as public class name
+
+Note 2 : JVM checks for public class and inside that public class - will check for "public static void main(String[] args)" method as this
+         is start point for execution of program - we don't need to create instance of the class so it should be "static"
+
+
+Static blocks && Instance blocks, instanceof keyword
+====================================================
+
+Example: static block
+=====================
+public class StaticBlockExample {
+
+   // A static initialization block is executed when the class is loaded into memory,
+   // and it runs only once, regardless of how many instances of the class are created.
+   // It's typically used for class-level initialization.
+   static {
+        System.out.println("This is a static initialization block.");
+    }
+
+    public StaticBlockExample() {
+        System.out.println("Constructor called.");
+    }
+
+    public static void main(String[] args) {
+        StaticBlockExample obj1 = new StaticBlockExample();
+        StaticBlockExample obj2 = new StaticBlockExample();
+    }
+}
+
+Example : instance block
+========================
+
+//An instance initialization block is executed when an instance of the class is created even before the construtor
+// It's useful for performing instance-specific initialization. gets loaded for every new instance creation
+public class InstanceBlockExample {
+    {
+        System.out.println("This is an instance initialization block.");
+    }
+
+    public InstanceBlockExample() {
+        System.out.println("Constructor called.");
+    }
+
+    public static void main(String[] args) {
+        InstanceBlockExample obj1 = new InstanceBlockExample();
+        InstanceBlockExample obj2 = new InstanceBlockExample();
+    }
+}
+
+instanceof keyword example :
+============================
+class Animal {
+    // This is the base class.
+}
+
+class Dog extends Animal {
+    // This is a subclass of Animal.
+}
+
+class Cat extends Animal {
+    // This is another subclass of Animal.
+}
+
+public class InstanceOfExample {
+    public static void main(String[] args) {
+        Animal animal = new Dog(); // Creating a Dog object and assigning it to an Animal reference.
+        testAnimalType(animal);
+        
+        animal = new Cat(); // Creating a Cat object and assigning it to the same Animal reference.
+        testAnimalType(animal);
+    }
+
+    public static void testAnimalType(Animal animal) {
+        if (animal instanceof Dog) {
+            System.out.println("It's a Dog!");
+        } else if (animal instanceof Cat) {
+            System.out.println("It's a Cat!");
+        } else if (animal instanceof Animal) {
+            System.out.println("It's an Animal!");
+        } else {
+            System.out.println("Unknown type");
+        }
+    }
+}
+// It's a Dog!
+// It's a Cat!
+
+
+
+
+
+
+
 ```
     
     <h6>Encapuslation(Access specifiers,packages, using getters/setters)</h6>
