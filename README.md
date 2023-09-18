@@ -447,12 +447,11 @@ public class Main {
     }
 }
 
-
-
-
-
 ```
 
+- Differences between abstract class and interface
+
+![Alt Text](https://i.pinimg.com/736x/02/ba/9c/02ba9c498b5e09b7c3f35a6c4bcfac82.jpg)
 
 
 
