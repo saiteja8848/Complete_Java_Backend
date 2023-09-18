@@ -177,11 +177,14 @@ public class InstanceOfExample {
 // It's a Dog!
 // It's a Cat!
 
-
-
-
-
-
+What are the default values assigned to variables and instances in java?
+- There are no default values assigned to the variables in java.
+We need to initialize the value before using it. Otherwise, it will throw a compilation error of (Variable might not be initialized). 
+- But for instance, if we create the object,
+then the default value will be initialized by the default constructor depending on the data type. 
+- If it is a reference, then it will be assigned to null. 
+- If it is numeric, then it will assign to 0.
+- If it is a boolean, then it will be assigned to false. Etc
 
 ```
     
