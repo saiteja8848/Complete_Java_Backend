@@ -5,7 +5,8 @@
 
 <details>
 <Summary>Object oriented Programming Concepts</Summary>
-    <h6>Class(Static) & Object(Non-static or Instance)</h6>
+
+<h6>Class(Static) & Object(Non-static or Instance)</h6>
 
 ``` 
         
@@ -188,10 +189,24 @@ then the default value will be initialized by the default constructor depending 
 
 ```
     
-    <h6>Encapuslation(Access specifiers,packages, using getters/setters)</h6>
-    <h6>Abstraction(Interface, Abstract class, Interfaces vs abstract class)</h6>
-    <h6>Polymorphism(Method overloading(Static/compile time binding) and method overriding(Runtime/Dynamic binding- reference type))</h6>
-    <h6>Inheritance(types of inheritance, diamond problem, Reusabality)</h6>
+<h6>Encapuslation(Access specifiers,packages, using getters/setters)</h6>
+
+Encapsulation : It is a mechanism in Java that bundles data (attributes) and the methods (functions) 
+that operate on that data into a single unit known as a class.
+
+
+
+
+
+
+
+
+
+
+
+<h6>Abstraction(Interface, Abstract class, Interfaces vs abstract class)</h6>
+<h6>Polymorphism(Method overloading(Static/compile time binding) and method overriding(Runtime/Dynamic binding- reference type))</h6>
+<h6>Inheritance(types of inheritance, diamond problem, Reusabality)</h6>
 </details>
 
 
