@@ -6,6 +6,60 @@
 <details>
 <Summary>Object oriented Programming Concepts</Summary>
     <h6>Class(Static) & Object(Non-static or Instance)</h6>
+
+``` 
+        
+        Class
+            - A class in Java is a blueprint or template for creating objects.
+            - It defines the structure and behavior that objects created from the class will have. 
+            - It consists of instance variables(fields/properties), methods(actions/behavior) and construtors(initilization), nested classes.
+            - It is a logical entity.
+            - To access class level methods or fields- we have to define them as static fields or static methods.
+            - By default every class is child class of Object class in java - we can use object class methods on every class - inheritance.
+
+        Object
+           - It is a physical entity, it takes up the memory space
+           - we use new keyword to create an instance of the class called object.
+           - when we call new keyword on a class for creating object, it first invokes constructor - which is used to initializing fields.
+
+      Example :
+
+               // Define a class named "Person"
+                class Person {
+                    // Fields (attributes)
+                    String name;
+                    int age;
+                
+                    // Constructor
+                    public Person(String name, int age) {
+                        this.name = name;
+                        this.age = age;
+                    }
+        
+                    // Method to display information about the person
+                    public void displayInfo() {
+                        System.out.println("Name: " + name);
+                        System.out.println("Age: " + age);
+                    }
+        }
+
+            public class Main {
+                public static void main(String[] args) {
+                    // Create an object of the "Person" class
+                    Person person1 = new Person("Alice", 30);
+            
+                    // Call the "displayInfo" method on the object
+                    person1.displayInfo();
+            
+                    // Create another object of the "Person" class
+                    Person person2 = new Person("Bob", 25);
+            
+                    // Call the "displayInfo" method on the second object
+                    person2.displayInfo();
+                }
+            }
+```
+    
     <h6>Encapuslation(Access specifiers,packages, using getters/setters)</h6>
     <h6>Abstraction(Interface, Abstract class, Interfaces vs abstract class)</h6>
     <h6>Polymorphism(Method overloading(Static/compile time binding) and method overriding(Runtime/Dynamic binding- reference type))</h6>
