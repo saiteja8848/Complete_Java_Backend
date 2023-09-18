@@ -287,12 +287,169 @@ Abstraction :
 - Data Abstraction is the property by virtue of which only the essential details are displayed to the user.
 The trivial or the non-essential units are not displayed to the user.
 - Encapsulation  is data hiding(information hiding) while Abstraction is detailed hiding(implementation hiding)
+- In Java, abstraction is achieved by interfaces and abstract classes. We can achieve 100% abstraction using interfaces.
 
 Reasons for abstraction :
 - To achieve loosely coupling
 - To achieve security - hide certain details and only show the important details of an object.
 
-- In Java, abstraction is achieved by interfaces and abstract classes. We can achieve 100% abstraction using interfaces.
+
+
+Example for interface:
+======================
+
+// Define the Connectable interface
+interface Connectable {
+    void connectToInternet();
+}
+
+// Implementing classes
+class Smartphone implements Connectable {
+    private String brand;
+
+    public Smartphone(String brand) {
+        this.brand = brand;
+    }
+
+    @Override
+    public void connectToInternet() {
+        System.out.println(brand + " smartphone is connecting to the internet.");
+    }
+}
+
+class Laptop implements Connectable {
+    private String brand;
+
+    public Laptop(String brand) {
+        this.brand = brand;
+    }
+
+    @Override
+    public void connectToInternet() {
+        System.out.println(brand + " laptop is connecting to the internet.");
+    }
+}
+
+class Tablet implements Connectable {
+    private String brand;
+
+    public Tablet(String brand) {
+        this.brand = brand;
+    }
+
+    @Override
+    public void connectToInternet() {
+        System.out.println(brand + " tablet is connecting to the internet.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Smartphone iphone = new Smartphone("iPhone");
+        Laptop dell = new Laptop("Dell");
+        Tablet samsung = new Tablet("Samsung");
+
+        iphone.connectToInternet();
+        dell.connectToInternet();
+        samsung.connectToInternet();
+    }
+}
+
+Example for abstract class
+==========================
+
+// Abstract class representing an Electronic Device
+abstract class ElectronicDevice {
+    private String brand;
+    private String model;
+    private boolean poweredOn;
+
+    public ElectronicDevice(String brand, String model) {
+        this.brand = brand;
+        this.model = model;
+        this.poweredOn = false; // Devices start in a powered-off state
+    }
+
+    // Abstract method for turning on the device (to be implemented by subclasses)
+    public abstract void powerOn();
+
+    // Abstract method for turning off the device (to be implemented by subclasses)
+    public abstract void powerOff();
+
+    // Concrete method for displaying device information
+    public void displayInfo() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Model: " + model);
+        System.out.println("Powered On: " + poweredOn);
+    }
+}
+
+// Concrete subclass for smartphones
+class Smartphone extends ElectronicDevice {
+    public Smartphone(String brand, String model) {
+        super(brand, model);
+    }
+
+    @Override
+    public void powerOn() {
+        System.out.println("Booting up the smartphone...");
+        poweredOn = true;
+    }
+
+    @Override
+    public void powerOff() {
+        System.out.println("Shutting down the smartphone...");
+        poweredOn = false;
+    }
+
+    // Additional smartphone-specific methods can be added here
+}
+
+// Concrete subclass for laptops
+class Laptop extends ElectronicDevice {
+    public Laptop(String brand, String model) {
+        super(brand, model);
+    }
+
+    @Override
+    public void powerOn() {
+        System.out.println("Booting up the laptop...");
+        poweredOn = true;
+    }
+
+    @Override
+    public void powerOff() {
+        System.out.println("Shutting down the laptop...");
+        poweredOn = false;
+    }
+
+    // Additional laptop-specific methods can be added here
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Smartphone myPhone = new Smartphone("Apple", "iPhone 12");
+        Laptop myLaptop = new Laptop("Dell", "XPS 13");
+
+        myPhone.displayInfo();
+        myPhone.powerOn();
+        myPhone.displayInfo();
+        myPhone.powerOff();
+        myPhone.displayInfo();
+
+        System.out.println();
+
+        myLaptop.displayInfo();
+        myLaptop.powerOn();
+        myLaptop.displayInfo();
+        myLaptop.powerOff();
+        myLaptop.displayInfo();
+    }
+}
+
+
+
+
 
 ```
 
