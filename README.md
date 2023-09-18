@@ -191,9 +191,91 @@ then the default value will be initialized by the default constructor depending 
     
 <h6>Encapuslation(Access specifiers,packages, using getters/setters)</h6>
 
-Encapsulation : It is a mechanism in Java that bundles data (attributes) and the methods (functions) 
+
+Packages : A package is a way to organize related classes and interfaces into a group or namespace.
+- Preventing Name Conflicts
+- Access Control
+- Code Reusability
+- package keyword is used to define a package and import is used to add a package
+- By default java packages are - ![Alt Text](https://www.freetimelearning.com/java/uploadingimages/package%20in%20java.png)
+
+Access modifiers : 
+- Access modifiers in Java are keywords that control the visibility and accessibility of classes, fields (variables), methods (functions), and constructors within a Java program.
+- They determine which parts of your code can be accessed from other classes or packages
+![Alt Text](https://logicmojo.com/assets/dist/new_pages/images/access-modifiers-in-oops.png)
+
+![Alt Text](https://1.bp.blogspot.com/-GCbzAxJ3_t8/XeqabcPeFCI/AAAAAAAABRY/LTJz83SB0zw9Ur7SNaEb2wMg3-QiEmuIACLcBGAsYHQ/s640/Access_Modifier.png)
+
+```
+
+Encapsulation :
+===============
+It is a mechanism in Java that bundles data (attributes) and the methods (functions) 
 that operate on that data into a single unit known as a class.
 
+- It hides the internal implementation details of a class, promoting information hiding.
+- It provides a well-defined and controlled interface to interact with the object.
+- Encapsulation begins by declaring the fields (variables) of a class as private.
+- This means that the fields can only be accessed directly from within the class.
+To allow controlled access to the private fields, you provide public methods (getters and setters) within the class.
+These methods are used to read and modify the private field values.
+   - Getter methods (e.g., getMethodName) retrieve the values of private fields.
+   - Setter methods (e.g., setMethodName) modify the values of private fields.
+
+
+Example of encapuslation :
+--------------------------
+
+public class Person {
+    // Private fields
+    private String name;
+    private int age;
+
+    // Constructor
+    public Person(String name, int age) {
+        this.name = name;
+        setAge(age); // Using the setter method to validate and set age
+    }
+
+    // Getter method for name
+    public String getName() {
+        return name;
+    }
+
+    // Getter method for age
+    public int getAge() {
+        return age;
+    }
+
+    // Setter method for age with validation
+    public void setAge(int age) {
+        if (age >= 0 && age <= 120) { // Age validation
+            this.age = age;
+        } else {
+            System.out.println("Invalid age");
+        }
+    }
+
+    // Display information about the person
+    public void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+
+    public static void main(String[] args) {
+        // Create a Person object
+        Person person = new Person("Alice", 30);
+
+        // Access and modify object's properties using getter and setter methods
+        person.setAge(32);
+        person.displayInfo();
+    }
+}
+
+
+
+
+```
 
 
 
