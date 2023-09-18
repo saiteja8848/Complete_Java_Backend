@@ -5,11 +5,21 @@
 
 <details>
 <Summary>Object oriented Programming Concepts</Summary>
+    <h6>Class(Static) & Object(Non-static or Instance)</h6>
+    <h6>Encapuslation(Access specifiers,packages, using getters/setters)</h6>
+    <h6>Abstraction(Interface, Abstract class, Interfaces vs abstract class)</h6>
+    <h6>Polymorphism(Method overloading(Static/compile time binding) and method overriding(Runtime/Dynamic binding- reference type))</h6>
+    <h6>Inheritance(types of inheritance, diamond problem, Reusabality)</h6>
 </details>
+
 
 
 <details>
 <Summary>Exception Handling</Summary>
+</details>
+
+<details>
+<Summary>Nested classes,Interfaces and enum</Summary>
 </details>
 
 
@@ -114,10 +124,10 @@ public class Main {
 <br>
 <h6> 2.Method references</h6>
 
- - method references are a shorthand notation that allows you to refer to a method without actually invoking it
- - They provide a way to pass methods as arguments to functions or assign them to variables, making your code more concise and readable.
- - Method references are often used in functional programming and with features like the Stream API
- - There are four types of method references in Java
+  - method references are a shorthand notation that allows you to refer to a method without actually invoking it
+  - They provide a way to pass methods as arguments to functions or assign them to variables, making your code more concise and readable.
+  - Method references are often used in functional programming and with features like the Stream API
+  - There are four types of method references in Java
 
 ```
 
