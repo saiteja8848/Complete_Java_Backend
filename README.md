@@ -457,8 +457,19 @@ public class Main {
 
 
 
-<h6>Polymorphism(Method overloading(Static/compile time binding) and method overriding(Runtime/Dynamic binding- reference type))</h6>
+<h6>Polymorphism(Method overloading(Static/compile time binding)&method overriding(Runtime/Dynamic binding- reference type))</h6>
+
+A)Method overloading
+B)Method Overriding
+
+
+
 <h6>Inheritance(types of inheritance, diamond problem, Reusabality)</h6>
+
+![Alt Text](https://i0.wp.com/www.tutorialspoint.com/java/images/types_of_inheritance.jpg?zoom=2)
+
+https://javagoal.com/multiple-inheritances-in-java/
+
 </details>
 
 
