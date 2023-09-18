@@ -277,16 +277,30 @@ public class Person {
 
 ```
 
-
-
-
-
-
-
-
-
-
 <h6>Abstraction(Interface, Abstract class, Interfaces vs abstract class)</h6>
+
+
+
+```
+Abstraction :
+-------------
+- Data Abstraction is the property by virtue of which only the essential details are displayed to the user.
+The trivial or the non-essential units are not displayed to the user.
+- Encapsulation  is data hiding(information hiding) while Abstraction is detailed hiding(implementation hiding)
+
+Reasons for abstraction :
+- To achieve loosely coupling
+- To achieve security - hide certain details and only show the important details of an object.
+
+- In Java, abstraction is achieved by interfaces and abstract classes. We can achieve 100% abstraction using interfaces.
+
+```
+
+
+
+
+
+
 <h6>Polymorphism(Method overloading(Static/compile time binding) and method overriding(Runtime/Dynamic binding- reference type))</h6>
 <h6>Inheritance(types of inheritance, diamond problem, Reusabality)</h6>
 </details>
