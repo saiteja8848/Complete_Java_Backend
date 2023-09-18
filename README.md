@@ -6,7 +6,9 @@
 <details>
 <Summary>Object oriented Programming Concepts</Summary>
 
-<h6>Class(Static) & Object(Non-static or Instance)</h6>
+<h6><strong>Class(Static) & Object(Non-static or Instance)</strong></h6>
+
+
 
 ``` 
         
