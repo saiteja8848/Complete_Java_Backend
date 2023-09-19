@@ -631,6 +631,20 @@ Q21: How to make user thread to a daemon thread ?
 Q21: Can we restart the same thread again ?
 
 Q22: How do we timeout a thread ?
+
+
+Q23: Print N numbers via 2 threads one for each even number and one for odd number ?
+
+
+Q24: What is the Java Memory Model (JMM), and why is it important in concurrent programming?
+
+Q25: How does the Executor framework simplify managing and controlling threads in Java?
+
+Q26 : What is the java.util.concurrent.locks package, and how does it provide more flexible locking mechanisms compared to synchronized?
+
+Q27: Producer and consumer problem, reader and writer problem and dinning philosophors problems
+
+Q28:
  
 </details>
 
