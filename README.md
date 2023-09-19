@@ -515,6 +515,48 @@ why multiple inheritance is not possible in java and java 8 solution ?
 
 <details>
 <Summary>Multithreading</Summary>
+
+##### Necessity of multithreading and terms
+     - Mono/Multi core CPU and memory model, clock cycles
+     - Thread Schedulers allocation of threads or programs to the CPU.
+     - Scheduling Algorithms and priority.
+     - Task,Thread,Program and Process.
+ 
+##### Terminology and how things work
+      - Ways how CPU execute Tasks : Concurrency,Parallelism and Concurrency+Parallelism.
+      - Programming Models : Synchronous and Asynchronous.
+      - Environments : Single Threaded and MultiThreading.
+      - Dependent and Independent Tasks examples.
+
+##### Thread life cycle and thread, task creation in java
+     - Thread LifeCycle : New, Runnable, Running and Terminated.
+     - Ways to create task and thread in java.
+     - Thread class properties and methods.
+     - Know About fork, join and Thread pool and group.
+
+##### Problems with multithreading with examples in java
+     - Race Condition and critical section (dirty read/write problem).
+     - DeadLock (long wait or starvation problem).
+     - Visibility Problem (shared variable value is not updated).
+     
+##### Synchronization — lock/monitor concept for race condition + other approaches
+     - Locking concept and different types of locks.
+     - Locking (classLevel(static) and objectLevel (instance)).
+     - ObjectLevel(applicable to all synchronized methods/blocks in class).
+     - ObjectLevel (set lock for every synchronized block/method).
+     - Reentrant locks
+     - Atomic class and Concurrent Collections (ThreadSafe) , semaphores etc
+     
+##### Thread local and thread signaling concept
+
+##### DeadLock Prevention ways and Volatile Keyword for visibility problem
+
+##### Inter thread communication ways — wait(), notify() and notifyAll
+
+##### ExecutorFramework- Threads Creation and execution management
+
+##### How to work with sync and async multithreaded programs in spring boot examples ?
+ 
 </details>
 
 
