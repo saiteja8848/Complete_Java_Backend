@@ -516,30 +516,30 @@ why multiple inheritance is not possible in java and java 8 solution ?
 <details>
 <Summary>Multithreading</Summary>
 
-##### Necessity of multithreading and terms
+##### 1.Necessity of multithreading and terms
      - Mono/Multi core CPU and memory model, clock cycles
      - Thread Schedulers allocation of threads or programs to the CPU.
      - Scheduling Algorithms and priority.
      - Task,Thread,Program and Process.
  
-##### Terminology and how things work
+##### 2.Terminology and how things work
       - Ways how CPU execute Tasks : Concurrency,Parallelism and Concurrency+Parallelism.
       - Programming Models : Synchronous and Asynchronous.
       - Environments : Single Threaded and MultiThreading.
       - Dependent and Independent Tasks examples.
 
-##### Thread life cycle and thread, task creation in java
+##### 3.Thread life cycle and thread, task creation in java
      - Thread LifeCycle : New, Runnable, Running and Terminated.
      - Ways to create task and thread in java.
      - Thread class properties and methods.
      - Know About fork, join and Thread pool and group.
 
-##### Problems with multithreading with examples in java
+##### 4.Problems with multithreading with examples in java
      - Race Condition and critical section (dirty read/write problem).
      - DeadLock (long wait or starvation problem).
      - Visibility Problem (shared variable value is not updated).
      
-##### Synchronization — lock/monitor concept for race condition + other approaches
+##### 5.Synchronization — lock/monitor and release concept for race condition + other approaches
      - Locking concept and different types of locks.
      - Locking (classLevel(static) and objectLevel (instance)).
      - ObjectLevel(applicable to all synchronized methods/blocks in class).
@@ -547,15 +547,90 @@ why multiple inheritance is not possible in java and java 8 solution ?
      - Reentrant locks
      - Atomic class and Concurrent Collections (ThreadSafe) , semaphores etc
      
-##### Thread local and thread signaling concept
+##### 6.Thread local and thread signaling concept
 
-##### DeadLock Prevention ways and Volatile Keyword for visibility problem
+##### 7.DeadLock Prevention ways and Volatile Keyword for visibility problem
 
-##### Inter thread communication ways — wait(), notify() and notifyAll
+##### 8.Inter thread communication ways — wait(), notify() and notifyAll
 
-##### ExecutorFramework- Threads Creation and execution management
+##### 9.ExecutorFramework- Threads Creation and execution management
 
-##### How to work with sync and async multithreaded programs in spring boot examples ?
+##### 10.How to work with sync and async multithreaded programs in spring boot examples ?
+
+##### Multithreading Interview questions
+Q1. Suppose, you have thread T1, T2, and T3. How will you ensure
+that thread T2 will run after T1 and thread T3 after T2?
+
+
+
+Q2. Why do we call the start() method first, which in turn calls the
+run() method, why not directly call the run() method in our
+programs?
+
+
+Q3: Explain the differences between User-level and Kernel level
+thread?
+
+Q4: How will you awake a blocked thread in Java?
+
+Q5: Which one is better to implement thread in Java? extending
+Thread class or implementing Runnable?
+
+Q6: What’s the difference between class lock and object lock?
+
+Q7: Difference between t.start() and t.run() methods.
+
+Q8: What happened if we are not overriding run() method ?
+
+Q9: What is the difference between wait and sleep in Java?
+
+Q10: Which method will release lock?
+
+Q11: What is a race condition? How will you find and solve race
+condition?
+
+• race conditions,
+• deadlock
+• Livelock-: When all the threads are in a blocked state and
+execution is stopped due to resource unavailability, then
+that situation is termed as livelock.
+• Starvation
+
+Q13: Print sequence using 3 threads in java
+T1 1
+T2 2
+T3 3
+T1 4
+T2 5
+T3 6
+T1 7
+T2 8
+T3 9
+T1 10
+
+
+Q14: How many types of thread are there in java ?
+
+Q15: Difference between creating a thread using Runnable interface and Thread class ?
+
+Q16: Can we change the name of a thread and how if yes ?
+
+Q17: Can two threads have same name if yes how can we identify them ?
+
+Q18: What are MIN_PRIORITY, MAX_PRIORITY AND NORM_PRIORITY and default priortiy of thread, priorty of main thread, can we change ?
+
+Q19: Difference between isInterrupted and interrupted ?
+
+
+Q20: What is executor framework ?
+
+Q21: Explain volatile variables ?
+
+Q21: How to make user thread to a daemon thread ?
+
+Q21: Can we restart the same thread again ?
+
+Q22: How do we timeout a thread ?
  
 </details>
 
