@@ -52,6 +52,6 @@ where brand not in (select brand from cte where flag = 0)
 ```
 
 
-##### Q3. Write a query to fetch the record of brand whose amount is increasing every year.
+##### Q3. Write a query to fetch personId whose submission count is alteast 1 per day throughout the course - recursive sql.
 https://www.youtube.com/watch?v=S5gX-LLAZIM&list=PLavw5C92dz9Fahr7taauUx5RnTfuGyL--&index=3ear.
 </details>
