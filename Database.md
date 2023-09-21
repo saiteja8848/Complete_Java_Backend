@@ -2,7 +2,7 @@
 
 
 <details>
-<Summary>Object oriented Programming Concepts</Summary>
+<Summary>Database related Interview Questions</Summary>
 
 ##### Q1. Define database ? How many different types of databases and difference between them ?
 
